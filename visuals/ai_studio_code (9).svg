@@ -1,0 +1,19 @@
+<svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Spout -->
+  <path d="M 32 50 C 10 50 15 35 15 20" fill="none" stroke="#D45D56" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Chubby Body -->
+  <path d="M 30 50 C 30 20 90 20 90 50 C 90 80 80 90 60 90 C 40 90 30 80 30 50 Z" fill="none" stroke="#D45D56" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- Flat Base Line -->
+  <path d="M 40 90 L 80 90" stroke="#D45D56" stroke-width="3.5" stroke-linecap="round"/>
+  
+  <!-- Handle -->
+  <path d="M 90 40 C 115 35 110 70 85 75" fill="none" stroke="#D45D56" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Lid -->
+  <path d="M 45 23 C 50 15 70 15 75 23" fill="none" stroke="#D45D56" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="60" cy="12" r="4" fill="#D45D56"/>
+  
+  <!-- Stylized Steam -->
+  <path d="M 15 12 C 20 5 5 0 10 -8" fill="none" stroke="#D45D56" stroke-width="2.5" stroke-linecap="round" transform="translate(0, 5)"/>
+</svg>

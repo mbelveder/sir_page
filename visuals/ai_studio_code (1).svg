@@ -1,0 +1,18 @@
+<svg width="140" height="80" viewBox="0 0 140 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Scale Ruler Body -->
+  <rect x="15" y="60" width="110" height="8" fill="none" stroke="#D15B54" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Ruler Marks -->
+  <path d="M 25 60 L 25 68 M 35 60 L 35 68 M 45 60 L 45 68 M 55 60 L 55 68 M 65 60 L 65 68 M 75 60 L 75 68 M 85 60 L 85 68 M 95 60 L 95 68 M 105 60 L 105 68 M 115 60 L 115 68" stroke="#D15B54" stroke-width="2" stroke-linecap="round"/>
+  <!-- Feet -->
+  <path d="M 25 68 L 25 78 M 15 78 L 35 78 M 115 68 L 115 78 M 105 78 L 125 78" stroke="#D15B54" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Triangle Cheese -->
+  <path d="M 30 60 L 55 60 L 45 25 Z" fill="none" stroke="#D15B54" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="45" cy="40" r="4" fill="none" stroke="#D15B54" stroke-width="2"/>
+  <circle cx="38" cy="50" r="3" fill="none" stroke="#D15B54" stroke-width="2"/>
+  
+  <!-- Pacman Cheese -->
+  <path d="M 90 60 A 20 20 0 1 1 105 45 L 90 45 Z" fill="none" stroke="#D15B54" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="85" cy="35" r="3" fill="none" stroke="#D15B54" stroke-width="2"/>
+  <circle cx="95" cy="52" r="2" fill="#D15B54"/>
+</svg>

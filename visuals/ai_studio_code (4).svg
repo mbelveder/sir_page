@@ -1,0 +1,10 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Solid Body with mouth pointing bottom-right -->
+  <path d="M 45 45 L 75 75 A 40 40 0 1 1 85 35 Z" fill="#2D2A26" stroke-linejoin="round"/>
+  <!-- Back Eye (Left) -->
+  <circle cx="60" cy="22" r="11" fill="#EAE5D9" stroke="#2D2A26" stroke-width="3.5"/>
+  <circle cx="63" cy="22" r="4" fill="#2D2A26"/>
+  <!-- Front Eye (Right) -->
+  <circle cx="78" cy="32" r="11" fill="#EAE5D9" stroke="#2D2A26" stroke-width="3.5"/>
+  <circle cx="81" cy="32" r="4" fill="#2D2A26"/>
+</svg>

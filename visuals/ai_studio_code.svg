@@ -1,0 +1,10 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pizza Body -->
+  <path d="M 15 55 Q 50 40 85 20 Q 100 50 85 90 Q 50 75 15 55 Z" fill="none" stroke="#2D2A26" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Sunglasses Bar -->
+  <line x1="25" y1="42" x2="90" y2="40" stroke="#2D2A26" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Left Lens -->
+  <path d="M 32 42 L 55 41 L 53 53 A 12 12 0 0 1 32 52 Z" fill="#2D2A26" stroke-linejoin="round"/>
+  <!-- Right Lens -->
+  <path d="M 62 41 L 82 40 L 80 50 A 10 10 0 0 1 62 50 Z" fill="#2D2A26" stroke-linejoin="round"/>
+</svg>
