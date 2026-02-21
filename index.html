@@ -20,7 +20,7 @@
       --gold:        #B8892A;
     }
 
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; scroll-padding-top: 70px; }
 
     body {
       font-family: 'Nunito Sans', sans-serif;
@@ -566,6 +566,62 @@
       flex-wrap: wrap;
     }
 
+    /* ── MAP ────────────────────────────────────────────────── */
+    .map-wrap {
+      max-width: 1240px;
+      margin: 56px auto 0;
+      border-radius: 4px;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    /* ── TELEGRAM CTA ───────────────────────────────────────── */
+    .tg-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 36px;
+      padding: 14px 28px;
+      border: 1.5px solid rgba(255,255,255,0.18);
+      border-radius: 2px;
+      color: var(--cream);
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .tg-cta:hover { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.38); }
+
+    /* ── BACK TO TOP ────────────────────────────────────────── */
+    .back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 200;
+      width: 44px;
+      height: 44px;
+      background: var(--dark);
+      color: var(--cream);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.25s, transform 0.25s, background 0.2s;
+      pointer-events: none;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    .back-to-top:hover { background: var(--coral); }
+
     /* ── FOOTER ────────────────────────────────────────────── */
     footer {
       background: var(--warm);
@@ -822,14 +878,16 @@
 <!-- ═══════════════════════════════════════════════════ MARQUEE -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Сыр — это прыжок молока в бессмертие</span><span class="dot">✦</span>
     <span>Лавка и кафе в Кремле Измайлово</span><span class="dot">✦</span>
-    <span>Сыры со всего мира</span><span class="dot">✦</span>
     <span>Пицца, хинкали, хачапури</span><span class="dot">✦</span>
     <span>Кинопоказы и творческие вечера</span><span class="dot">✦</span>
-    <span>Сыр — это прыжок молока в бессмертие</span><span class="dot">✦</span>
     <span>Лавка и кафе в Кремле Измайлово</span><span class="dot">✦</span>
-    <span>Сыры со всего мира</span><span class="dot">✦</span>
+    <span>Пицца, хинкали, хачапури</span><span class="dot">✦</span>
+    <span>Кинопоказы и творческие вечера</span><span class="dot">✦</span>
+    <span>Лавка и кафе в Кремле Измайлово</span><span class="dot">✦</span>
+    <span>Пицца, хинкали, хачапури</span><span class="dot">✦</span>
+    <span>Кинопоказы и творческие вечера</span><span class="dot">✦</span>
+    <span>Лавка и кафе в Кремле Измайлово</span><span class="dot">✦</span>
     <span>Пицца, хинкали, хачапури</span><span class="dot">✦</span>
     <span>Кинопоказы и творческие вечера</span><span class="dot">✦</span>
   </div>
@@ -1119,9 +1177,14 @@
     </div>
   </div>
 
-  <p style="text-align: center; margin-top: 40px; font-size: 13px; letter-spacing: 0.1em; color: rgba(244,240,230,0.4);">
-    Следите за анонсами в Telegram-канале <a href="https://t.me/SYROKATICGEGO" style="color: var(--coral); text-decoration: none;">@SYROKATICGEGO</a>
-  </p>
+  <div style="text-align: center; margin-top: 8px;">
+    <a class="tg-cta" href="https://t.me/SYROKATICGEGO" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21.8 2.15L1.4 9.9c-1.3.5-1.3 1.2-.2 1.5l5.2 1.6 12-7.6c.6-.4 1.1-.2.7.2L8.4 16.1l-.4 5.4c.6 0 .9-.3 1.2-.6l2.9-2.8 5.3 3.9c1 .5 1.7.3 1.9-.9l3.4-16c.4-1.5-.6-2.2-1.9-1.9z" fill="currentColor"/>
+      </svg>
+      Следить за событиями — @SYROKATICGEGO
+    </a>
+  </div>
 </section>
 
 <!-- ══════════════════════════════════════════ BIG QUOTE -->
@@ -1200,6 +1263,11 @@
     </div>
 
   </div>
+
+  <!-- Yandex Map -->
+  <div class="map-wrap">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A33ef2cb1762bb4ea8ef862d3e8162866ac736d5ee618587dbf19cfbfb8e1f969&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
 </section>
 
 <!-- ══════════════════════════════════════════════ FOOTER -->
@@ -1214,6 +1282,20 @@
     <a href="https://t.me/SYROKATICGEGO">Telegram: @SYROKATICGEGO</a>
   </div>
 </footer>
+
+<!-- ══════════════════════════════════════════ BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Наверх">
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 12V4M4 8l4-4 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+<script>
+  const btn = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  });
+  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
 
 </body>
 </html>
